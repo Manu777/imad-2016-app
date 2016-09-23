@@ -8,4 +8,5 @@ element.innerHTML = 'Hey Everyone';
 var img = document.getElementById('madi');
 img.onclick = function(){
   img.style.marginLeft = '100px';  
+  img.style.marginRight = '100px';
 };
