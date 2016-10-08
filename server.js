@@ -93,10 +93,10 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
-var counter = 0;
+var counter = 0; //initially
 app.get('/counter', function (req,res){
     counter = counter + 1;
-    res.send(counter.toString());
+    res.send(counter.toString()); //only string can be sent
 });
 
 
