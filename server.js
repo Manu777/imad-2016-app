@@ -99,6 +99,22 @@ app.get('/counter', function (req,res){
     res.send(counter.toString()); //only string can be sent
 });
 
+var names = [];
+app.get('/submit-name', function (req, res){ //URL: submit-name?name=xxxx 
+   //how to extract name=xxx from this object
+   //get the name from the request object
+   var name = req.query.name;
+   var name; //T000
+   //now we need to concatenate to our overall list
+   names.push(name);
+   //JSON - Javascript Object Notation - a way of converting js objects into strings
+   res.send(JSON.stringify(names));
+   //how do we extract the name from the request
+   //for this, we will send the data as part of the url object
+   
+   //how are we gonna send the name, as name is in aaray and this is javacsript object
+   //that is how can we send a javascript object as an array
+});
 
 
 app.get('/:articleName', function(req, res) {
@@ -121,22 +137,7 @@ app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
 });
 
-var names = [];
-app.get('/submit-name', function (req, res){ //URL: submit-name?name=xxxx 
-   //how to extract name=xxx from this object
-   //get the name from the request object
-   var name = req.query.name;
-   var name; //T000
-   //now we need to concatenate to our overall list
-   names.push(name);
-   //JSON - Javascript Object Notation - a way of converting js objects into strings
-   res.send(JSON.stringify(names));
-   //how do we extract the name from the request
-   //for this, we will send the data as part of the url object
-   
-   //how are we gonna send the name, as name is in aaray and this is javacsript object
-   //that is how can we send a javascript object as an array
-});
+
 
 var port = 8080; // Use 8080 for local development because you might already have apache running on 80
 app.listen(8080, function () {
