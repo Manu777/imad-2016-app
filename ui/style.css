@@ -1,30 +1,35 @@
-body {
-    font-family: sans-serif;
-    background-color: lightgrey;
-    margin-top: 60px;
+.container {
+    width: 100%;
+    border: 1px solid gray;
 }
 
-.center {
+header, footer {
+    padding: 1em;
+    color: white;
+    background-color: black;
+    clear: left;
     text-align: center;
 }
 
-.text-big {
-    font-size: 300%;
+nav {
+    float: left;
+    max-width: 160px;
+    margin: 0;
+    padding: 1em;
 }
 
-.bold {
-    font-weight: bold;
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+   
+nav ul a {
+    text-decoration: none;
 }
 
-.img-medium {
-    height: 200px;
+article {
+    margin-left: 170px;
+    border-left: 1px solid gray;
+    padding: 1em;
+    overflow: hidden;
 }
-
-.container{
-    max-width: 800px;
-    margin: 0 auto;
-    color: #ab2e2e;
-    font-family: san-serif;
-    padding-left: 20px;
-    padding-right: 20px;
-    }
