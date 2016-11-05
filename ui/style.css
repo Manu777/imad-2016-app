@@ -1,9 +1,9 @@
-.container {
+container {
     width: 100%;
     
 }
 
-.header, footer {
+header, footer {
     padding: 1em;
     color: white;
     background-color: black;
@@ -11,23 +11,23 @@
     text-align: center;
 }
 
-.nav {
+nav {
     float: left;
     max-width: 160px;
     margin: 0;
     padding: 1em;
 }
 
-.nav ul {
+nav ul {
     list-style-type: none;
     padding: 0;
 }
    
-.nav ul a {
+nav ul a {
     text-decoration: none;
 }
 
-.article {
+article {
     margin-left: 170px;
     border-left: 1px solid gray;
     padding: 1em;
