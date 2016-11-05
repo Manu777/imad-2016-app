@@ -1,14 +1,25 @@
 <!doctype html>
 <html>
-    <script type="text/javascript">
-        
-        alert('Hi, what is your name?');
-        
-        
-    </script>
+    
     <head>
         <link href="/ui/style.css" rel="stylesheet" />
     </head>
+   <p>Click the button to demonstrate the prompt box.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+    var person = prompt("Please enter your name", "Harry Potter");
+    
+    if (person != null) {
+        document.getElementById("demo").innerHTML =
+        "Hello " + person + "! How are you today?";
+    }
+}
+</script>
    
     <body style="background-color:powderblue;">
         
