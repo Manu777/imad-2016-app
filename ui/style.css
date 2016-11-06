@@ -6,7 +6,7 @@ container {
 header, footer {
     padding: 1em;
     color: white;
-    background-color: green;
+    background-color: #45f442;
     clear: left;
     text-align: center;
 }
